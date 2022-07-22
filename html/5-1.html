@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        color: hotpink;
+      }
+
+      .wrapper {
+        position: relative;
+      }
+
+      .absolute-box {
+        position: absolute;
+      }
+
+      .data-box {
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 126px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      [class*="data-row-"] {
+        width: 100%;
+        height: 29px;
+        /* border: 2px solid green; */
+      }
+
+      #secr_no {
+        left: 1170px;
+        top: 133px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img class="pdf-img" src="./img-5-1.png" alt="pdf-5-1" />
+      <div id="secr_no" class="absolute-box data-box">secr_no</div>
+    </div>
+  </body>
+</html>

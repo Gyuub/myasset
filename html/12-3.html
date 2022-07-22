@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        color: hotpink;
+      }
+
+      .wrapper {
+        position: relative;
+      }
+
+      .absolute-box {
+        position: absolute;
+      }
+
+      .data-box {
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 126px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      [class*="data-row-"] {
+        width: 100%;
+        height: 75px;
+        /* border: 2px solid green; */
+      }
+
+      #secr_no {
+        left: 1768px;
+        top: 180px;
+        height: 49px;
+      }
+
+      .data-row-1 {
+        top: 563px;
+      }
+
+      [aria-label="col-1"] {
+        left: 700px;
+      }
+
+      [class*="data-row-"] + .next {
+        margin-top: 75px;
+      }
+      .next + .next {
+        margin-top: calc(75px + 75px);
+      }
+
+      .last {
+        margin-top: calc(75px + 75px + 75px);
+      }
+
+      [aria-label="col-2"] {
+        left: 1610px;
+      }
+
+      /*  */
+      .data-row-2 {
+        top: 2753px;
+      }
+      .data-row-2 > .ctor_name {
+        left: 1581px;
+      }
+
+      .data-row-3 {
+        top: 3148px;
+      }
+
+      #secr_yyyy {
+        left: 1822px;
+      }
+
+      #secr_mm {
+        left: 2063px;
+      }
+
+      #secr_dd {
+        left: 2204px;
+      }
+
+      #pe_name {
+        top: 20px;
+        left: 1931px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img class="pdf-img" src="./img-12-3.png" alt="pdf-12-3" />
+      <div id="secr_no" class="secr_no absolute-box data-box">@secr_no</div>
+
+      <div class="absolute-box data-row-1">
+        <div aria-label="col-1" class="secr_no absolute-box data-box">@secr_no</div>
+      </div>
+      <div class="absolute-box data-row-1 next">
+        <div id="mng_gds_nm" aria-label="col-1" class="absolute-box data-box">mng_gds_nm</div>
+        <div id="ins_gds_type_nm" aria-label="col-2" class="absolute-box data-box">
+          ins_gds_type_nm
+        </div>
+      </div>
+      <div class="absolute-box data-row-1 next">
+        <div aria-label="col-1" class="ctor_name absolute-box data-box">@ctor_name</div>
+        <div id="birth_ymd" aria-label="col-2" class="absolute-box data-box">birth_ymd</div>
+      </div>
+
+      <!--  -->
+      <div class="absolute-box data-row-2">
+        <div class="ctor_name absolute-box data-box">ctor_name</div>
+      </div>
+
+      <div class="absolute-box data-row-3">
+        <div id="secr_yyyy" class="absolute-box data-box">secr_yyyy</div>
+        <div id="secr_mm" class="absolute-box data-box">secr_mm</div>
+        <div id="secr_dd" class="absolute-box data-box">secr_dd</div>
+      </div>
+
+      <div class="absolute-box data-row-3 next">
+        <div id="pe_name" class="absolute-box data-box">pe_name</div>
+      </div>
+    </div>
+  </body>
+</html>

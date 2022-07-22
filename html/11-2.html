@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        color: hotpink;
+      }
+
+      .wrapper {
+        position: relative;
+      }
+
+      .absolute-box {
+        position: absolute;
+      }
+
+      .data-box {
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 126px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      [class*="data-row-"] {
+        width: 100%;
+        height: 89px;
+        /* border: 2px solid green; */
+      }
+
+      #secr_no {
+        left: 1927px;
+        top: 186px;
+        height: 49px;
+      }
+
+      .data-row-1 {
+        top: 713px;
+      }
+
+      .small-next {
+        margin-top: 91px;
+      }
+      .small-double-next {
+        margin-top: calc(91px * 2);
+      }
+      .small-third-next {
+        margin-top: calc(91px * 3);
+      }
+
+      #gender {
+        left: 1462px;
+      }
+
+      #ctor_age {
+        left: 1853px;
+      }
+
+      .ml-125 {
+        margin-left: 125px;
+      }
+
+      .ml-250 {
+        margin-left: 250px;
+      }
+
+      .date {
+        left: 1462px;
+      }
+
+      /*  */
+      .col-1{
+        left: 590px;
+      }
+      .col-2 {
+        left: 1490px;
+      }
+
+      .data-row-2 {
+        top: 1443px;
+        height: 249px;
+      }
+
+      [class*="data-row-"] + .next {
+        margin-top: 462px;
+      }
+
+      .next-2 {
+        margin-top: calc(462px + 260px);
+      }
+
+      .next-3 {
+        margin-top: calc(462px + 260px * 2);
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img class="pdf-img" src="./img-11-2.png" alt="pdf-11-2" />
+      <div id="secr_no" class="absolute-box data-box">secr_no</div>
+
+      <div class="absolute-box data-row-1">
+        <div id="gender" class="absolute-box data-box">gender</div>
+        <div id="ctor_age" class="absolute-box data-box">ctor_age</div>
+      </div>
+
+      <div class="absolute-box data-row-1 small-next">
+        <div id="exam_yyyy" class="date absolute-box data-box">exam_yyyy</div>
+        <div id="exam_mm" class="date absolute-box data-box ml-125">exam_mm</div>
+        <div id="exam_dd" class="date absolute-box data-box ml-250">exam_dd</div>
+      </div>
+
+      <div class="absolute-box data-row-1 small-double-next">
+        <div id="exam_result_yn" class="date absolute-box data-box">exam_result_yn</div>
+      </div>
+
+      <div class="absolute-box data-row-1 small-third-next">
+        <div id="exam_result" class="date absolute-box data-box">exam_result</div>
+      </div>
+
+      <!--  -->
+
+      <div class="absolute-box data-row-2">
+        <div id="exam_res_1"  class="absolute-box data-box col-1">exam_res_1</div>
+        <div id="exam_check_1"  class="absolute-box data-box col-2">exam_check_1</div>
+      </div>
+
+      <div class="absolute-box data-row-2 next">
+        <div id="exam_res_2"  class="absolute-box data-box col-1">exam_res_2</div>
+        <div id="exam_check_2"  class="absolute-box data-box col-2">exam_check_2</div>
+      </div>
+
+      <div class="absolute-box data-row-2 next-2">
+        <div id="exam_res_3"  class="absolute-box data-box col-1">exam_res_3</div>
+        <div id="exam_check_3"  class="absolute-box data-box col-2">exam_check_3</div>
+      </div>
+
+      <div class="absolute-box data-row-2 next-3">
+        <div id="exam_res_4"  class="absolute-box data-box col-1">exam_res_4</div>
+        <div id="exam_check_4"  class="absolute-box data-box col-2">exam_check_4</div>
+      </div>
+
+    </div>
+  </body>
+</html>

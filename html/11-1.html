@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        color: hotpink;
+      }
+
+      .wrapper {
+        position: relative;
+      }
+
+      .absolute-box {
+        position: absolute;
+      }
+
+      .data-box {
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 126px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      [class*="data-row-"] {
+        width: 100%;
+        height: 89px;
+        /* border: 2px solid green; */
+      }
+
+      #secr_no {
+        left: 1719px;
+        top: 199px;
+        height: 49px;
+      }
+
+      .data-row-1 {
+        top: 830px;
+      }
+
+      [class*="data-row-"] + .next {
+        margin-top: 249px;
+      }
+
+      .next-2 {
+        margin-top: calc(249px * 2);
+      }
+
+      .next-3 {
+        margin-top: calc(249px * 3);
+      }
+
+      .next-4 {
+        margin-top: calc(249px * 4);
+      }
+
+      .next-5 {
+        margin-top: calc(249px * 5);
+      }
+
+      .small-next {
+        margin-top: 91px;
+      }
+      .small-double-next {
+        margin-top: 182px;
+      }
+
+      #gender {
+        left: 1560px;
+      }
+
+      #ctor_age {
+        left: 1950px;
+      }
+
+      .ml-125 {
+        margin-left: 125px;
+      }
+
+      .ml-250 {
+        margin-left: 250px;
+      }
+
+      .date {
+        left: 1546px;
+      }
+
+      /*  */
+      .col-1{
+        left: 750px;
+      }
+      .col-2 {
+        left: 1490px;
+      }
+
+      .data-row-2 {
+        top: 1410px;
+        height: 249px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img class="pdf-img" src="./img-11-1.png" alt="pdf-11-1" />
+      <div id="secr_no" class="absolute-box data-box">secr_no</div>
+
+      <div class="absolute-box data-row-1">
+        <div id="gender" class="absolute-box data-box">gender</div>
+        <div id="ctor_age" class="absolute-box data-box">ctor_age</div>
+      </div>
+
+      <div class="absolute-box data-row-1 small-next">
+        <div id="exam_yyyy" class="date absolute-box data-box">exam_yyyy</div>
+        <div id="exam_mm" class="date absolute-box data-box ml-125">exam_mm</div>
+        <div id="exam_dd" class="date absolute-box data-box ml-250">exam_dd</div>
+      </div>
+
+      <div class="absolute-box data-row-1 small-double-next">
+        <div id="exam_result_yn" class="date absolute-box data-box">exam_result_yn</div>
+      </div>
+
+      <!--  -->
+
+      <div class="absolute-box data-row-2">
+        <div id="exam_res_1"  class="absolute-box data-box col-1">exam_res_1</div>
+        <div id="exam_check_1"  class="absolute-box data-box col-2">exam_check_1</div>
+      </div>
+
+      <div class="absolute-box data-row-2 next">
+        <div id="exam_res_2"  class="absolute-box data-box col-1">exam_res_2</div>
+        <div id="exam_check_2"  class="absolute-box data-box col-2">exam_check_2</div>
+      </div>
+
+      <div class="absolute-box data-row-2 next-2">
+        <div id="exam_res_3"  class="absolute-box data-box col-1">exam_res_3</div>
+        <div id="exam_check_3"  class="absolute-box data-box col-2">exam_check_3</div>
+      </div>
+
+      <div class="absolute-box data-row-2 next-3">
+        <div id="exam_res_4"  class="absolute-box data-box col-1">exam_res_4</div>
+        <div id="exam_check_4"  class="absolute-box data-box col-2">exam_check_4</div>
+      </div>
+
+      <div class="absolute-box data-row-2 next-4">
+        <div id="exam_res_5"  class="absolute-box data-box col-1">exam_res_5</div>
+        <div id="exam_check_5"  class="absolute-box data-box col-2">exam_check_5</div>
+      </div>
+
+      <div class="absolute-box data-row-2 next-5">
+        <div id="exam_res_6"  class="absolute-box data-box col-1">exam_res_6</div>
+        <div id="exam_check_6"  class="absolute-box data-box col-2">exam_check_6</div>
+      </div>
+    </div>
+  </body>
+</html>
