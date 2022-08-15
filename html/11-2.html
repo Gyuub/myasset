@@ -26,87 +26,112 @@
         align-items: center;
         top: 0;
         left: 0;
-        width: 126px;
+        width: 450px;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
       }
 
       [class*="data-row-"] {
         width: 100%;
-        height: 89px;
+        height: 50px;
         /* border: 2px solid green; */
       }
 
       #secr_no {
-        left: 1927px;
-        top: 186px;
+        left: 1170px;
+        top: 100px;
         height: 49px;
       }
 
       .data-row-1 {
-        top: 713px;
+        top: 435px;
+        left:-652px;
       }
+
+      [class*="data-row-"] + .next {
+        margin-top: 280px;
+      }
+
+      
+      
 
       .small-next {
         margin-top: 91px;
       }
       .small-double-next {
-        margin-top: calc(91px * 2);
-      }
-      .small-third-next {
-        margin-top: calc(91px * 3);
+        margin-top: 182px;
       }
 
       #gender {
-        left: 1462px;
+        left: 1560px;
       }
 
       #ctor_age {
-        left: 1853px;
+        left: 1780px;
       }
 
       .ml-125 {
-        margin-left: 125px;
+        margin-left: 80px;
       }
 
       .ml-250 {
-        margin-left: 250px;
+        margin-left: 160px;
       }
 
       .date {
-        left: 1462px;
+        top:-37px;
+        left: 1530px;
       }
 
       /*  */
       .col-1{
-        left: 590px;
+        left: 350px;
       }
       .col-2 {
-        left: 1490px;
+        left: 880px;
+        
       }
 
       .data-row-2 {
-        top: 1443px;
-        height: 249px;
+        top: 870px;
+        height: 280px;
       }
 
-      [class*="data-row-"] + .next {
-        margin-top: 462px;
+      #exam_result_yn{
+        top:-72px;
+        left: 1610px;
+      }
+      #exam_result{
+        top:-22px;
+        left: 1590px;
       }
 
+      .next{
+        height: 160px;
+      }
       .next-2 {
-        margin-top: calc(462px + 260px);
+        margin-top: calc(220px * 2);
+        height: 150px;
       }
 
       .next-3 {
-        margin-top: calc(462px + 260px * 2);
-        height: 400px;
+        margin-top: calc(197px * 3);
+        height: 250px;;
       }
+
+      .next-4 {
+        margin-top: calc(280px * 4);
+      }
+
+      .next-5 {
+        margin-top: calc(280px * 5);
+      }
+
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <img class="pdf-img" src="./img-11-2.png" alt="pdf-11-2" />
+      <img class="pdf-img" src="./img-11-2.png" alt="pdf-11-1" />
       <div id="secr_no" class="absolute-box data-box">secr_no</div>
 
       <div class="absolute-box data-row-1">
@@ -122,9 +147,6 @@
 
       <div class="absolute-box data-row-1 small-double-next">
         <div id="exam_result_yn" class="date absolute-box data-box">exam_result_yn</div>
-      </div>
-
-      <div class="absolute-box data-row-1 small-third-next">
         <div id="exam_result" class="date absolute-box data-box">exam_result</div>
       </div>
 

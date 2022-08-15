@@ -63,6 +63,11 @@
         height: 43px;
       }
 
+      .data-row-4 {
+        top: calc(895px);
+        height: 43px;
+      }
+
       .data-row-3 > div {
         width: auto;
       }
@@ -105,13 +110,34 @@
         height: 37px;
       }
 
-      .ctor_name {
+      .data-row-three-1 {
+        top: calc(2005px + 170px);
+        height: 37px;
+      }
+
+      #ctor_name {
         left: 780px;
+        top: 46px
+      }
+      #ctor_name1 {
+        left: 245px;
       }
         
-    .ctor_name1 {
+    #ctor_name2 {
         left: 680px;
-        top: 50px;
+        
+      }
+      #birth_ymd{
+        left: 1081px;
+        
+      }
+      #addr_tel_no1{
+        left: 1081px;
+        top: 46px
+      }
+      #addr1{
+        left: 247px;
+        top: 46px
       }
     
     </style>
@@ -140,8 +166,21 @@
 
         <div aria-label="secr_dd" class="secr_dd absolute-box data-box">@secr_dd</div>
         
-        <div id="ctor_name" class="ctor_name1 absolute-box data-box">ctor_name</div>
+        <div id="ctor_name" class=" absolute-box data-box">ctor_name</div>
+        
       </div>
+
+      <div class="absolute-box data-row-4">
+        
+        <div id="ctor_name1" class="absolute-box data-box">ctor_name1</div>
+        <div id="birth_ymd" class="absolute-box data-box">birth_ymd</div>
+        <div id="addr_tel_no1" class="absolute-box data-box">addr_tel_no1</div>
+        <!-- <div id="addr_pst_no1" class="absolute-box data-box">addr_pst_no1</div> -->
+        <div id="addr1" class="absolute-box data-box">addr1</div>
+
+        
+      </div>
+
 
       <div class="absolute-box data-row-two-1">
         <div aria-label="secr_yyyy" class="secr_yyyy absolute-box data-box">@secr_yyyy</div>
@@ -152,8 +191,10 @@
       </div>
         
       <div class="absolute-box data-row-two-2">
-        <div id="ctor_name1" class="ctor_name absolute-box data-box">ctor_name</div>
+        <div id="ctor_name2" class="ctor_name absolute-box data-box">ctor_name2</div>
       </div>
+
+     
     </div>
   </body>
 </html>
