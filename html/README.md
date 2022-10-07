@@ -15,3 +15,4 @@ contract_001_01_L72 | contract_001_02 | contract_001_03 | 01 :: 보험사별 로
 | 10 | 적합성진단결과 (  추천 보험 상품, 추천펀드 ) | 추천 :: recommend | 2 | recommend_001_01 | recommend_001_02 |  |  |
 | 11 | 적합성 판단 보고서 | 보고서 :: Report | 2 | report_001_01 | report_001_02 |  |  |
 | 12 | 과세,비과세 안내 문서 | 과세 :: Taxation | 3 | taxation_001_01 | taxation_001_02 | taxation_001_03 |  |
+
