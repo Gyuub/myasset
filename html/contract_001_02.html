@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        color: hotpink;
+      }
+
+      .wrapper {
+        position: relative;
+      }
+
+      .absolute-box {
+        position: absolute;
+      }
+
+      .data-box {
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      [class*="data-row-"] {
+        width: 100%;
+        height: 29px;
+        /* border: 2px solid green; */
+      }
+
+      #secr_no {
+        left: 1290px;
+        top: 15px;
+        height: 20px;
+      }
+
+      .data-row-1 {
+        top: 91px;
+      }
+
+      #addr_pst_no1 {
+        left: 416px;
+        width: 109px;
+        top: 5px;
+      }
+
+      
+      #addr_pst_no2 {
+        left: 416px;
+        width: 109px;
+      }
+
+ 
+      #addr_pst_no3 {
+        left: 416px;
+        width: 109px;
+      }
+
+      
+
+      .data-row-2 {
+        top: 122px;
+        height: 52px;
+      }
+
+      .data-row-3 {
+        top: 176px;
+      }
+      .data-row-4 {
+        top: 306px;
+      }
+
+      #addr1{
+        left: 246px;
+        width: 821px;
+      }
+      
+      #addr2{
+        left: 246px;
+        width: 821px;
+        top: 29px;
+      }
+      #addr3{
+        left: 246px;
+        width: 821px;
+        top: 40px;  
+      }
+      #method{
+        left: 1320px;
+        width: 30px;
+        top: -25px;
+      }
+      #method1{
+        left: 1400px;
+        width: 30px;
+
+      }
+
+      [class*="data-row-two"] {
+        height: 38px;
+      }
+
+      .data-row-two-1 {
+        top: 464px;
+      }
+
+      [aria-label="tr_bank1"] {
+        left: 511px;
+        
+      }
+
+      [aria-label="acno1"] {
+        left: calc(551px + 400px + 80px);
+        
+      }
+        
+      #am_rejectY {
+        left: 1278px;
+        width: 40px;
+        height: 40px;
+        top: 217px;
+      }
+        #am_rejectN {
+        left: 1463px;
+        width: 40px;
+        height: 40px;
+        top: 217px;
+      }
+      #am_person {
+        left: 722px;
+        width: 40px;
+        height: 40px;
+        top: 440px;
+      }
+
+      .data-row-two-2 {
+        top: calc(464px + 38px);
+      }
+      .data-row-two-2-1 {
+        top: calc(464px + 75px);
+      }
+      
+
+      .data-row-two-3 {
+        top: 592px;
+      }
+
+      .data-row-two-4 {
+        top: calc(592px + 38px);
+      }
+
+
+      .data-row-three-1 {
+        top: 715px;
+        height: 43px;
+      }
+      #edd_trs_obj_cat3{
+        left:225px;
+        width: 20px;
+      }
+
+      .data-row-three-2 {
+        top: 859px;
+        height: 23px;;
+      }
+      #edd_trs_obj_cat1{
+        left:225px;
+        width: 20px;
+      }
+      #edd_trs_obj_cat2{
+        left:calc(225px + 123px);
+        width: 20px;
+      }
+      #edd_trs_obj_cat3{
+        left:calc(225px + 263px);
+        width: 20px;
+      }
+      #edd_trs_obj_cat4{
+        left:calc(225px + 390px);
+        width: 20px;
+      }
+      #edd_trs_obj_cat5{
+        left:calc(225px + 470px);
+        width: 20px;
+      }
+      #edd_trs_obj_cat6{
+        left:calc(225px + 625px);
+        width: 20px;
+      }
+      #edd_trs_obj_cat7{
+        left:calc(225px + 740px);
+        width: 20px;
+      }
+
+      .data-row-three-3 {
+        top: 910px;
+        height: 23px;
+      }
+
+      #edd_mny_sou_cat1{
+        left:calc(225px + 0px);
+        width: 20px;
+      }
+      #edd_mny_sou_cat2{
+        left:calc(225px + 210px);
+        width: 20px;
+      }
+      #edd_mny_sou_cat3{
+        left:calc(225px + 210px + 128px);
+        width: 20px;
+      }
+      #edd_mny_sou_cat4{
+        left:calc(225px + 210px + 128px + 128px);
+        width: 20px;
+      }
+      #edd_mny_sou_cat5{
+        left:calc(225px + 210px + 128px + 128px + 190px);
+        width: 20px;
+      }
+      #edd_mny_sou_cat6{
+        left:calc(225px + 210px + 128px + 128px + 190px + 210px);
+        width: 20px;
+      }
+      #edd_mny_sou_cat7{
+        left:calc(225px + 0px);
+        top: 30px;
+        width: 20px;
+      }
+      #edd_mny_sou_cat8{
+        left:calc(225px + 130px);
+        width: 20px;
+        top: 30px;
+      }
+      #edd_mny_sou_cat9{
+        left:calc(225px + 300px);
+        width: 20px;
+        top: 30px;
+      }
+
+      .data-row-three-4 {
+        top: 983px;
+        height: 23px;
+      }
+
+      #edd_assets1{
+        left:calc(225px + 0px);
+        width: 20px;
+      }
+      #edd_assets2{
+        left:calc(225px + 148px);
+        width: 20px;
+      }
+      #edd_assets3{
+        left:calc(225px + 210px + 205px);
+        width: 20px;
+      }
+      #edd_assets4{
+        left:calc(225px + 210px + 205px + 160px);
+        width: 20px;
+      }
+      #edd_assets5{
+        top:25px; 
+        left:calc(225px);
+        width: 20px;
+      }
+      #edd_assets6{
+        top:25px; 
+        left:calc(225px + 330px);
+        width: 20px;
+      }
+      
+
+      .data-row-three-5 {
+        top: 1105px;
+        height: 23px;
+      }
+      #method2{
+        left:747px;
+        width: 20px;
+      }
+
+
+      #iden_isue_ymd1 {
+        left: 439px;
+      }   
+      #iden_isue_ymd2 {
+        left: 930px;
+      }
+      #iden_isue_chk1 {
+        left: 90px;
+        width: 40px;
+      }
+      #iden_isue_chk2 {
+        left: 190px;
+        width: 40px;
+      }
+
+      #days1{
+        left:980px;
+        width:30px;
+      }
+      #days2{
+        left:1070px;
+        width:30px;
+      }
+      #days3{
+        left:1170px;
+        width:30px;
+      }
+      #days4{
+        left:1270px;
+        width:30px;
+      }
+      #days5{
+        left:1370px;
+        width:30px;
+      }
+    #addr_tel_no1{
+        left: 677px;
+        width: 213px;
+        top: 5px;
+      }
+      #addr_tel_no2{
+        left: 678px;
+        width: 200px;
+        top: 85px;
+      }
+      #addr_tel_no3{
+        left: 246px;
+        width: 200px;
+        top: 60px;
+      }
+      #addr_tel_no4{
+        left: 678px;
+        width: 200px;
+        top: 0px;
+      }
+      #addr_tel_no5{
+        left: 246px;
+        width: 200px;
+        top: 80px;
+      }
+        #email1{
+          top:58px;
+          left:900px;
+        }
+        #email2{
+          top:78px;
+          left:900px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img class="pdf-img" src="/img/contract_001_02.png" alt="pdf-2" />
+      <div id="secr_no" class="absolute-box data-box">secr_no</div>
+
+      <div class="absolute-box data-row-1">
+        <div id="addr_pst_no1" class="absolute-box data-box">
+          addr_pst_no1
+        </div>
+
+        <div id="addr_tel_no1" class="addr_tel_no absolute-box data-box">
+          addr_tel_no1
+        </div>
+        <div id="addr_tel_no2" class=" absolute-box data-box">addr_tel_no2</div>
+      </div>
+
+      <div class="absolute-box data-row-2">
+        <div id="addr1" class="absolute-box data-box">addr1</div>
+        
+        <div id="method" class="absolute-box data-box">method</div>
+      </div>
+
+      <div class="absolute-box data-row-3">
+        <div id="addr_pst_no2" class="absolute-box data-box">
+          addr_pst_no2
+        </div>
+
+        <div id="method1" class="absolute-box data-box">
+          method1
+        </div>
+      </div>
+
+      <div class="absolute-box data-row-3">
+        <div id="addr2" class="absolute-box data-box">
+          addr2
+        </div>
+
+        <div id="addr_tel_no3" class="absolute-box data-box">
+          addr_tel_no3
+        </div>
+
+        <div id="email1" class="absolute-box data-box">
+          email1
+        </div>
+      </div>
+      
+      <div class="absolute-box data-row-4">
+        <div id="addr_pst_no3" class="absolute-box data-box">
+          addr_pst_no3
+        </div>
+
+      </div>
+
+      <div class="absolute-box data-row-4">
+        <div id="addr3" class="absolute-box data-box">
+          addr3
+        </div>
+
+        <div id="addr_tel_no4" class="absolute-box data-box">
+          addr_tel_no4
+        </div>
+        <div id="addr_tel_no5" class="absolute-box data-box">
+          addr_tel_no5
+        </div>
+
+        <div id="email2" class="absolute-box data-box">
+          email2
+        </div>
+      </div>
+
+
+      <!-- 보험료 이체 -->
+      <div class="absolute-box data-row-two-1">
+        <div id="tr_bank1" aria-label="tr_bank1" class="absolute-box data-box">tr_bank1</div>
+        <div id="acno1" aria-label="acno1" class="absolute-box data-box">acno1</div>
+      </div>
+
+      <div class="absolute-box data-row-two-2">
+        <div id="depor_ssn1" aria-label="tr_bank1" class="absolute-box data-box">depor_ssn1</div>
+        <div id="depor_nm1" aria-label="acno1" class="absolute-box data-box">depor_nm1</div>
+        <div id="am_rejectY" class="absolute-box data-box">am_rejectY</div>
+        <div id="am_rejectN" class="absolute-box data-box">am_rejectN</div>
+
+      </div>
+      <div class="absolute-box data-row-two-2-1">
+        <div id="days1" class="absolute-box data-box">days1</div>
+        <div id="days2"  class="absolute-box data-box">days2</div>
+        <div id="days3"  class="absolute-box data-box">days4</div>
+        <div id="days4" class="absolute-box data-box">days4</div>
+        <div id="days5"  class="absolute-box data-box">days5</div>
+        
+      </div>
+
+      <div class="absolute-box data-row-two-3">
+        <div id="tr_bank2" aria-label="tr_bank1" class="absolute-box data-box">tr_bank2</div>
+        <div id="acno2" aria-label="acno1" class="absolute-box data-box">acno2</div>
+      </div>
+
+      <div class="absolute-box data-row-two-4">
+        <div id="depor_ssn2" aria-label="tr_bank1" class="absolute-box data-box">depor_ssn2</div>
+        <div id="depor_nm2" aria-label="acno1" class="absolute-box data-box">depor_nm2</div>
+
+      <div class="absolute-box data-row-three-1">
+        <div id="iden_isue_chk1" class="absolute-box data-box">iden_isue_chk1</div>
+        <div id="iden_isue_chk2" class="absolute-box data-box">iden_isue_chk2</div>
+        <div id="iden_isue_ymd1" class="absolute-box data-box">iden_isue_ymd1</div>
+        <div id="iden_isue_ymd2" class="absolute-box data-box">iden_isue_ymd2</div>
+      </div>
+
+      <div class="absolute-box data-row-three-2">
+        
+        <div id="edd_trs_obj_cat1" class="absolute-box data-box">edd_trs_obj_cat1</div>
+        <div id="edd_trs_obj_cat2" class="absolute-box data-box">edd_trs_obj_cat2</div>
+        <div id="edd_trs_obj_cat3" class="absolute-box data-box">edd_trs_obj_cat3</div>
+        <div id="edd_trs_obj_cat4" class="absolute-box data-box">edd_trs_obj_cat4</div>
+        <div id="edd_trs_obj_cat5" class="absolute-box data-box">edd_trs_obj_cat5</div>
+        <div id="edd_trs_obj_cat6" class="absolute-box data-box">edd_trs_obj_cat6</div>
+        <div id="edd_trs_obj_cat7" class="absolute-box data-box">edd_trs_obj_cat7</div>
+      </div>
+
+      <div class="absolute-box data-row-three-3">
+        <div id="edd_mny_sou_cat1" class="absolute-box data-box">edd_mny_sou_cat1</div>
+        <div id="edd_mny_sou_cat2" class="absolute-box data-box">edd_mny_sou_cat2</div>
+        <div id="edd_mny_sou_cat3" class="absolute-box data-box">edd_mny_sou_cat3</div>
+        <div id="edd_mny_sou_cat4" class="absolute-box data-box">edd_mny_sou_cat4</div>
+        <div id="edd_mny_sou_cat5" class="absolute-box data-box">edd_mny_sou_cat5</div>
+        <div id="edd_mny_sou_cat6" class="absolute-box data-box">edd_mny_sou_cat6</div>
+        <div id="edd_mny_sou_cat7" class="absolute-box data-box">edd_mny_sou_cat7</div>
+        <div id="edd_mny_sou_cat8" class="absolute-box data-box">edd_mny_sou_cat8</div>
+        <div id="edd_mny_sou_cat9" class="absolute-box data-box">edd_mny_sou_cat9</div>
+      </div>
+
+      <div class="absolute-box data-row-three-4">
+        <div id="edd_assets1" class="absolute-box data-box">edd_assets1</div>
+        <div id="edd_assets2" class="absolute-box data-box">edd_assets2</div>
+        <div id="edd_assets3" class="absolute-box data-box">edd_assets3</div>
+        <div id="edd_assets4" class="absolute-box data-box">edd_assets4</div>
+        <div id="edd_assets5" class="absolute-box data-box">edd_assets5</div>
+        <div id="edd_assets6" class="absolute-box data-box">edd_assets6</div>
+      </div>
+
+      <div class="absolute-box data-row-three-5">
+        <div id="method2" class="absolute-box data-box">method2</div>
+      </div>
+
+    </div>
+  </body>
+</html>

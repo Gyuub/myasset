@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        color: hotpink;
+      }
+
+      .wrapper {
+        position: relative;
+      }
+
+      .absolute-box {
+        position: absolute;
+      }
+
+      .data-box {
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 126px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      [class*="data-row-"] {
+        width: 100%;
+        height: 29px;
+        /* border: 2px solid green; */
+      }
+
+      #secr_no {
+        left: 1200px;
+        top: 32px;
+        height: 20px;
+      }
+
+      .data-row-1,
+      .data-row-2,
+      .data-row-3 {
+        height: 22px;
+      }
+
+      .data-row-1 {
+        top: 678px;
+      }
+
+      .data-row-2 {
+        top: calc(676px + 38px);
+      }
+
+      [aria-label*="checkbox"] {
+        width: 20px;
+      }
+
+      [aria-label="checkbox-1"] {
+        left: 358px;
+      }
+
+      .data-row-3 {
+        top: 1086px;
+      }
+
+      [aria-label="checkbox-2"] {
+        left: 448px;
+      }
+
+      .data-row-two-1 {
+        top: 1448px;
+      }
+
+      [id^="secr"] {
+        width: auto;
+      }
+
+      #secr_yyyy {
+        left: 650px;
+      }
+
+      #secr_mm {
+        left: calc(670px + 60px);
+      }
+
+      #secr_dd {
+        left: calc(670px + 60px + 70px);
+      }
+
+      .data-row-two-2 {
+        top: calc(1448px + 53px);
+      }
+
+      #ctor_name {
+        left: 737px;
+      }
+
+      #ins_cort_tp_cd1{
+        left: 355px;
+        top: -2px;
+      }
+
+      #ins_cort_tp_cd2{
+        left: 355px;
+        top: -2px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img class="pdf-img" src="/img/consumer_001_01.png" alt="pdf-4-1" />
+      <div id="secr_no" class="absolute-box data-box">secr_no</div>
+
+      <div class="absolute-box data-row-1">
+        <div id="ins_cort_tp_cd1" aria-label="checkbox-1" class="absolute-box data-box">
+          ins_cort_tp_cd1
+        </div>
+      </div>
+
+      <div class="absolute-box data-row-2">
+        <div id="ins_cort_tp_cd2" aria-label="checkbox-1" class="absolute-box data-box">
+          ins_cort_tp_cd2
+        </div>
+      </div>
+
+      <div class="absolute-box data-row-3">
+        <div id="ins_cort_tp_yn_1" aria-label="checkbox-1" class="absolute-box data-box">
+          ins_cort_tp_yn_1
+        </div>
+
+        <div id="ins_cort_tp_yn_2" aria-label="checkbox-2" class="absolute-box data-box">
+          ins_cort_tp_yn_2
+        </div>
+      </div>
+
+      <div class="absolute-box data-row-two-1">
+        <div id="secr_yyyy" class="absolute-box data-box">secr_yyyy</div>
+
+        <div id="secr_mm" class="absolute-box data-box">secr_mm</div>
+
+        <div id="secr_dd" class="absolute-box data-box">secr_dd</div>
+      </div>
+
+      <div class="absolute-box data-row-two-2">
+        <div id="ctor_name" class="absolute-box data-box">ctor_name</div>
+      </div>
+    </div>
+  </body>
+</html>
