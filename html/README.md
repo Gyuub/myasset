@@ -1,9 +1,6 @@
 | 구분 | 내용 | 단어 | 갯수 | 파일명_1 | 파일명_2 | 파일명_3 | 비고 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 보험계약 청약서 | 계약 :: Contract | 3 | contract_001_01
-contract_001_01_L02
-contract_001_01_L51
-contract_001_01_L72 | contract_001_02 | contract_001_03 | 01 :: 보험사별 로고가 들어가기 떄문에 보험사별로 나눔 |
+| 1 | 보험계약 청약서 | 계약 :: Contract | 3 | contract_001_01, contract_001_01_L02, contract_001_01_L51, contract_001_01_L72 | contract_001_02 | contract_001_03 | 01 :: 보험사별 로고가 들어가기 떄문에 보험사별로 나눔 |
 | 2 | 가입제안을 위한, 체결 상세 동의서  | 제안 :: Proposal | 3 | proposal_001_01 | proposal_001_02 | proposal_001_03 |  |
 | 3 | 상품 설명에 대한 계약자 안내 | 설명 :: Description | 1 | description_001_01 |  |  |  |
 | 4 | 일반, 전문 금융소비자 여부 확인서 | 소비자 :: Consumer | 1 | consumer_001_01 |  |  |  |
